@@ -23,7 +23,7 @@ import about01 from '../assets/about01.png';
 import about02 from '../assets/about02.png';
 import about03 from '../assets/about03.png';
 import about04 from '../assets/about04.png';
-import profile from '../assets/profile.png';
+import profile from '../assets/profile-circle.jpg';
 import circle from '../assets/circle.svg';
 import logo from '../assets/logo.png';
 import adidas from '../assets/adidas.png';
@@ -35,6 +35,7 @@ import skype from '../assets/skype.png';
 import spotify from '../assets/spotify.png';
 import Tube from '../assets/Tube.jpg';
 import Har from '../assets/Har.jpg';
+import Angular from '../assets/angular.png';
 
 const images =  {
   Tube,
@@ -74,6 +75,7 @@ const images =  {
   nb,
   skype,
   spotify,
+  Angular
 };
 
 export default images;
