@@ -31,7 +31,7 @@ const Work = () => {
       if (item === 'All') {
         setFilterWork(works);
       } else {
-        setFilterWork(works.filter((work) => work.tags.includes(item)));
+        setFilterWork(works.filter((work) => work.tags?.includes(item)));
       }
     }, 500);
   };
@@ -41,7 +41,7 @@ const Work = () => {
       <h2 className="head-text">My Creative <span>Portfolio</span> Section</h2>
 
       <div className="app__work-filter">
-        {['UI/UX', 'Web App', 'Mobile App', 'React JS', 'All'].map((item, index) => (
+        {['All','Angular', 'React JS', 'UI/UX', 'Web App', 'Mobile App'].map((item, index) => (
           <div
             key={index}
             onClick={() => handleWorkFilter(item)}
@@ -98,7 +98,7 @@ const Work = () => {
               <p className="p-text" style={{ marginTop: 10 }}>{work.description}</p>
 
               <div className="app__work-tag app__flex">
-                <p className="p-text">{work.tags[0]}</p>
+                <p className="p-text">{work.tags?.[0]}</p>
               </div>
             </div>
           </div>
